@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class CalculatorController {
-    @GetMapping("/add")
+    @GetMapping("/addition")
     public double add(@RequestParam double a, @RequestParam double b) {
         return a + b;
     }
