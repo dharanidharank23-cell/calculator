@@ -15,4 +15,10 @@ public class CalculatorController {
         return a - b;
     }
 
+    
+    @GetMapping("/multiplication")
+    public double multiply(@RequestParam double a, @RequestParam double b) {
+        return a * b;
+    }
+
 }
